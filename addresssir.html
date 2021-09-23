@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function getAdress() {
+            var Name = document.getElementById("name").value
+            var Location = document.getElementById("location").value
+            var City = document.getElementById("city").value
+            var address = Name + " , " + Location + " , " + City;
+            document.getElementById("address").value = address;
+
+            // console.log(name+" "+ location + " " +city);
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Location:
+            </td>
+            <td>
+                <input type="text" id="location">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                City:
+            </td>
+            <td>
+                <input type="text" id="city">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="send" onclick="getAdress()">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                Address:
+            </td>
+            <td>
+                <input type="text" id="address">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

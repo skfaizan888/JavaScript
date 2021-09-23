@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Documents</title>
+    </head>
+    <script>
+        function getFullName(fname){
+           console.log(fname + "called" );
+        }
+        function getmydata(){
+            console.warn("DO note fetch data...");
+        }
+    </script>
+    <body>
+        First Name:<input type="text">
+        last Name:<input type="text">
+        <input type="button" value="FullName" onclick="getFullName('sacchin')">
+        <input type="button" value="button2" onclick="getFullName('virat')">
+        <input type="button" value="button3" onclick="getFullName('siraj')">
+        <input type="button" value="button warning" onclick="getmydata()">
+    </body>
+   
+  
+</html>

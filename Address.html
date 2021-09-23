@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getname(){
+            var Name=document.getElementById("name").value 
+            var Location=document.getElementById("location").value 
+            var City=document.getElementById("city").value
+            
+            document.getElementById("address").value= Name + ", " + Location + ", " + City ;
+            
+            console.log(name+" "+ location + " " +city);
+        }
+    </script>
+</head>
+<body>
+    Name <input id="name" type="text">
+    Location <input id="location" type="text">
+    city <input id="city" type="text">
+    <input type="button" value="send" onclick="getname ()">
+    address <input id="address">
+</body>
+</html>

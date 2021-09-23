@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Documents</title>
+        <script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                m                                                                                                                                                                                                                                                                                                                                                                            
+            function getFullName(){
+                var FirstName= document.getElementById('fname').value;
+                var lastname= document.getElementById('lname').value;
+                if(FirstName.length>2){
+                    document.getElementById("fullname").value=FirstName+ " " +lastname;
+                }else{
+                    document.getElementById("fullname").value ="";
+                    alert("please enter first name more than 3 char");
+                }
+                console.log(FirstName+" "+ lastname);
+            }
+            
+        </script>
+    </head>
+    <body>
+        FirstName:<input id="fname" type="text">
+        Last Name:<input id="lname" type="text">
+        <input type="button" value="Full Name" onclick="getFullName ()">
+        <br />
+        <br>
+        Full Name: <input id="fullname"></input>
+
+
+      
+
+    </body>
+</html>
