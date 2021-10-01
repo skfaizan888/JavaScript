@@ -12,4 +12,4 @@ const greetings = (type)=>{
     }
 };
 
-greetings(5);
+greetings(1);
