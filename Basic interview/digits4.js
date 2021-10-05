@@ -7,3 +7,4 @@ function  digits4(num){
     } return "Exactly 4"
 }
 console.log (digits4(125))
+
