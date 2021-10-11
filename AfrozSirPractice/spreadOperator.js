@@ -1,5 +1,12 @@
 const first =[1,2,3];
 const second=[4,5,6];
 
-const combined = [...first,...second];
-console.log(combined)
+
+// without Spread Opreatore
+const result =[first,second]
+console.log(result)
+
+
+//  Spread Operatore
+const Spreaded = [...first,...second];
+console.log(Spreaded)
